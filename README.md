@@ -1,0 +1,1 @@
+# https-shotablog.github.io
