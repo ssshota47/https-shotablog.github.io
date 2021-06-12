@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.header {
+  height: 80px;
+  width: auto;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.blog {
+  padding-top: 5px;
+  color: dimgray;
+  line-height: 80px;
+}
+
+.header_nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav_list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav_list_item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+
+
+.nav_list > li + li {
+  margin-left: 100px;
+}
+
+nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.main_sub {
+  width: 100%;
+  height: 500px;
+  margin-top: 1px;
+  background-image: url(images/IMG_7524\ 2.JPG);
+  background-position: bottom;
+}
+
+.main_contents {
+  text-align: left;
+  width: 60%;
+  padding: 50px 20px 20px 10px;
+  text-align: left;
+  opacity: 0.7;
+}
+
+ .main_contents_h2 {
+  letter-spacing: 10px;
+  font-size: 2em;
+  opacity: 0.7;
+  padding-bottom: 30px;
+}
+
+.main_sub p {
+  letter-spacing: 2px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+}
+
+.main_page {
+  width: 70%;
+  /* background-color: chartreuse; */
+}
+
+.main_title{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 6px solid #f7f7f7;
+  line-height: 0.6;
+  margin-bottom: 10px;
+}
+
+.main_box_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main_box {
+  
+  width: 50%;
+  text-align:center;
+  padding-bottom: 200px;
+}
+
+.main_box_text{
+  margin-left: 25px;
+}
+
+.main_box img {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+}
+
+.main_box ul {
+  margin-left: 3%;
+  text-align: left;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.blod_date{
+ font-size: 0.8em;
+ display: inline-block;
+}
+
+.blog_evaluation{
+ display: inline-block;
+ padding: 5px 8px;
+ background-color: rgba(241, 234, 195, 0.5);
+ border-radius: 3px;
+}
+
+.pagination{
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+.pagination p{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: white;
+  background-color: gray;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+.sidebar {
+  width: 30%;
+  height: auto;
+  /* background-color: blueviolet; */
+}
+
+.common-heading{
+  border-bottom: 6px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.sidebar-contents{
+  padding: 50px 18px;
+}
+
+.popular_text{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.popular_text:last-child{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram .sidebar-contents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram_box{
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.instagram_box:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.instagram_box:nth-child(1){
+ background-image: url(images/IMG_1356.JPG);
+}
+
+.instagram_box:nth-child(2) {
+  background-image: url(images/IMG_1357.JPG); 
+}
+
+.instagram_box:nth-child(3) {
+  background-image: url(images/IMG_1359.JPG);
+}
+
+.instagram_box:nth-child(4) {
+  background-image: url(images/IMG_6885.JPG);
+}
+
+.container{
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.access h2{
+ padding:20px 0 20px 0;
+}
+
+.access_map {
+  float: left;
+  width: 60%;
+  height: 80%;
+}
+
+.access_img {
+  object-fit: cover;
+  width: 90%;
+  height: 100%;
+}
+
+.access_contents {
+  float: right;
+  width: 40%;
+  text-align: left;
+}
+
+.access_text{
+  padding-bottom: 5px;
+
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: dimgray;
+  text-align: center;
+  margin: 20px 0 10px 0;
+  line-height: 50px;
+}
+
+.footer p {
+  font-size: 3px;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+
+@media screen and (max-width:425px) {
+
+ .header main, .main_sub, .sidebar, .access {
+   width: 100%;
+ }
+
+}
